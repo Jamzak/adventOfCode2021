@@ -6,8 +6,7 @@ class SecondTask {
 
     var counter = 0
     var newValue = 0;
-    var previousValue = 0;
-
+    var oldValue = 0;
     val list = arrayListOf<Int>()
 
     fun readFile(input: String) = File(input).forEachLine {
@@ -15,7 +14,7 @@ class SecondTask {
             list.add(it.toInt())
             if(list.size == 4){
                 newValue = list[1] + list[2] + list[3]
-                previousValue = list[0] + list[1] + list[2]
+                oldValue = list[0] + list[1] + list[2]
             }
         }else{
             list.removeAt(0)
@@ -23,12 +22,8 @@ class SecondTask {
             newValue = list[1] + list[2] + list[3]
         }
         if(list.size == 4){
-            println("PREVALUE $previousValue")
-            println("NEW VALUE$newValue")
-            if(newValue > previousValue){
-                counter++
-            }
-            previousValue = newValue
+            if(newValue > oldValue) counter++
+            oldValue = newValue
         }
     }
 }
