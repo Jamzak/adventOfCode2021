@@ -9,9 +9,7 @@ class FirstTask {
     var first = true
 
     fun readFile(input: String) = File(input).forEachLine {
-        if((it.toInt() > previousNumber) && !first){
-            counter++
-        }
+        if (it.toInt() > previousNumber && !first) counter++
         previousNumber = it.toInt()
         first = false;
     }
