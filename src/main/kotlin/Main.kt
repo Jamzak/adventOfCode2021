@@ -1,8 +1,6 @@
-fun main(args: Array<String>) {
 
-    val firstTask = FirstTask()
-    println(firstTask.readFile("src/main/resources/input.txt"))
 
-    val secondTask = SecondTask()
-    println(secondTask.readFile("src/main/resources/input.txt"))
+fun main() {
+    println(Task1Day1().readFile("src/main/resources/input.txt"))
+    println(Task2Day1().readFile("src/main/resources/input.txt"))
 }

@@ -2,7 +2,7 @@ import java.io.File
 
 // https://adventofcode.com/2021/day/1
 
-class SecondTask {
+class Task2Day1 {
 
     var counter = 0; var newValue = 0; var oldValue = 0; val list = arrayListOf<Int>()
 
