@@ -1,10 +1,8 @@
 fun main(args: Array<String>) {
 
     val firstTask = FirstTask()
-    firstTask.readFile("src/main/resources/input.txt")
-    println(firstTask.counter)
+    println(firstTask.readFile("src/main/resources/input.txt"))
 
     val secondTask = SecondTask()
-    secondTask.readFile("src/main/resources/input.txt")
-    println(secondTask.counter)
+    println(secondTask.readFile("src/main/resources/input.txt"))
 }
