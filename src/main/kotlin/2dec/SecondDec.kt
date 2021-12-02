@@ -7,8 +7,8 @@ class SecondDec {
     fun readFile(input: String) : Int {
         File(input).forEachLine{
             val split = it.split(" ").toTypedArray()
-            val pos = split.get(0)
-            val num = split.get(1).toInt()
+            val pos = split[0]
+            val num = split[1].toInt()
 
             if(pos == "forward") horizontal += num
             if(pos == "up") depth -= num
