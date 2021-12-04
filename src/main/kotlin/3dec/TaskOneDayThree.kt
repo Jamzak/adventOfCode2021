@@ -12,7 +12,7 @@ class TaskOneDayThree {
             secondDimensionList.add(firstDimensionList)
         }
 
-        fun getBytes(type: String): String {
+        fun getBits(type: String): String {
             var rate = ""
             var counter = 0;
             repeat(secondDimensionList[0].size){
@@ -35,8 +35,8 @@ class TaskOneDayThree {
             return rate
         }
 
-        val gammaRate = getBytes("1").toInt(2)
-        val epsilonRate = getBytes("0").toInt(2)
+        val gammaRate = getBits("1").toInt(2)
+        val epsilonRate = getBits("0").toInt(2)
         return gammaRate * epsilonRate
     }
 }
