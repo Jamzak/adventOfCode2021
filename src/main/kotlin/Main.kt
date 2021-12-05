@@ -6,7 +6,8 @@ fun main() {
         //println(Task2Day1().readFile("src/main/resources/day1input.txt"))
         //println(TaskOne().readFile("src/main/resources/day2input.txt"))
         //println(TaskTwo().readFile("src/main/resources/day2input.txt"))
-        println(TaskOneDayThree().readFile("src/main/resources/day3Input.txt"))
+        //println(TaskOneDayThree().readFile("src/main/resources/day3Input.txt"))
+        println(TaskTwoDayThree().readFile("src/main/resources/day3Input.txt"))
     }
     //println(time / 1_000_000)
 }
